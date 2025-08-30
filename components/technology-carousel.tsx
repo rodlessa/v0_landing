@@ -2,19 +2,13 @@
 
 import { useEffect, useState } from "react"
 import { useLanguage } from "@/hooks/use-language"
+import { FaAws, FaDocker } from "react-icons/fa" 
+import { SiGrafana } from "react-icons/si" //
 
 const technologies = [
   {
     name: "AWS",
-    icon: (
-      <svg viewBox="0 0 24 24" className="w-8 h-8" fill="currentColor">
-        <path d="M6 8h2v8H6V8zm4-2h2v10h-2V6zm4 4h2v6h-2v-6z" />
-        <path d="M4 18h16v2H4v-2z" />
-        <text x="12" y="22" textAnchor="middle" fontSize="6" fontWeight="bold">
-          AWS
-        </text>
-      </svg>
-    ),
+    icon: <FaAws className="w-10 h-10 text-[#FF9900]" />, // cor oficial
   },
   {
     name: "SQL",
@@ -40,11 +34,7 @@ const technologies = [
   },
   {
     name: "Docker",
-    icon: (
-      <svg viewBox="0 0 24 24" className="w-8 h-8" fill="currentColor">
-        <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.185.185.186m0 2.716h2.118a.187.187 0 00.186-.186V6.29a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.887c0 .102.082.185.185.186m-2.93 0h2.12a.185.185 0 00.184-.186V6.29a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.083.185.185.185m-2.964 0h2.119a.186.186 0 00.185-.186V6.29a.185.185 0 00-.184-.186h-2.12a.186.186 0 00-.186.186v1.887c0 .102.084.185.186.185m-2.92 0h2.12a.185.185 0 00.184-.185V6.29a.185.185 0 00-.184-.186h-2.12a.185.185 0 00-.184.185v1.888c0 .102.082.185.185.185M23.763 9.89c-.065-.051-.672-.51-1.954-.51-.338 0-.676.03-1.01.087-.248-1.7-1.653-2.53-1.716-2.566l-.344-.199-.226.327c-.284.438-.49.922-.612 1.43-.23.97-.09 1.882.403 2.661-.595.332-1.55.413-1.744.42H.751a.751.751 0 00-.75.748 11.376 11.376 0 00.692 4.062c.545 1.428 1.355 2.48 2.41 3.124 1.18.723 3.1 1.137 5.275 1.137.983 0 1.938-.089 2.835-.266a11.192 11.192 0 003.090-.142c.94-.4 1.818-.99 2.604-1.75.677-.652 1.248-1.479 1.695-2.454a14.707 14.707 0 001.304-2.330 5.861 5.861 0 002.054-1.281 4.6 4.6 0 001.090-1.743.751.751 0 00-.197-.72" />
-      </svg>
-    ),
+    icon: <FaDocker className="w-10 h-10 text-[#2496ED]" />, // cor oficial
   },
   {
     name: "GitHub CI/CD",
@@ -80,12 +70,7 @@ const technologies = [
   },
   {
     name: "Grafana",
-    icon: (
-      <svg viewBox="0 0 24 24" className="w-8 h-8" fill="currentColor">
-        <path d="M3 18h2v3H3v-3zm4-6h2v9H7v-9zm4-8h2v17h-2V4zm4 4h2v13h-2V8zm4-2h2v15h-2V6z" />
-        <path d="M2 3l4 4 4-2 4 3 4-1 4 2v2l-4-2-4 1-4-3-4 2-4-4V3z" />
-      </svg>
-    ),
+    icon: <SiGrafana className="w-10 h-10 text-[#F46800]" />, // cor oficial Grafana
   },
   {
     name: "Prometheus",
