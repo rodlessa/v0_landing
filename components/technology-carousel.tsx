@@ -8,7 +8,7 @@ import { SiGrafana } from "react-icons/si"
 const technologies = [
   {
     name: "AWS",
-    icon: <FaAws className="w-10 h-10 text-[#FF9900]" />, // cor oficial
+    icon: <FaAws className="w-10 h-10 text-[#FF9900]" />, 
   },
   {
     name: "SQL",
