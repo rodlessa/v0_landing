@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { useLanguage } from "@/hooks/use-language"
 import { FaAws, FaDocker } from "react-icons/fa" 
-import { SiGrafana } from "react-icons/si" //
+import { SiGrafana } from "react-icons/si" 
 
 const technologies = [
   {
